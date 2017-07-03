@@ -6,6 +6,8 @@
 * UWP アプリ版: <https://www.microsoft.com/store/apps/9nhbvt8sgkcb>
 * Kindle 版: <http://amzn.to/2tbAWdt>
 
+![プロモーション画像](images/Promotion01.png)
+
 ## ビルドするには
 
 次の環境でビルドできることを確認しています。
