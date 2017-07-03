@@ -12,7 +12,7 @@
 
 * Windows 10 Pro. (64bit) build 15063.447
 * Visual Studio Community 2017 15.2 (26430.14)
-* Windows 10 SDK 10240, 10586, および 14393
+* Windows 10 SDK 10240, 10586, 14393, および 15063
 
 ## プロジェクト名
 
