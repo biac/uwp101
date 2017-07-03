@@ -39,6 +39,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{FFB0CA
 		images\002SelectSignatureDialog.png = images\002SelectSignatureDialog.png
 		images\003SelectSignatureDialog_CreateTestSignature.png = images\003SelectSignatureDialog_CreateTestSignature.png
 		images\004CreateTestSignatureDialog.png = images\004CreateTestSignatureDialog.png
+		images\Promotion01.png = images\Promotion01.png
 	EndProjectSection
 EndProject
 Global
