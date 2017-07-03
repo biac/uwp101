@@ -24,12 +24,12 @@
 
 1. マニフェスト (Package.appxmanifest) を開きます
 2. [パッケージ] タブの [証明書の選択] ボタンをクリックします  
-aaa ![パッケージ タブ](images/001PackagingTab.png)
+![パッケージ タブ](images/001PackagingTab.png)
 3. [証明書の選択] ダイアログで [証明書の構成] ボタンをクリックし、 [テスト証明書の作成] を選びます  
-bbb
-4. [テスト証明書の作成] ダイアログで [OK] ボタンをクリックします  
-ccc
+![テスト証明書の作成を選択](003SelectSignatureDialog_CreateTestSignature.png)
+4. [テスト証明書の作成] ダイアログで [OK] ボタンをクリックします (パスワードは設定しなくてもよいです)  
+![テスト証明書の作成 ダイアログ](004CreateTestSignatureDialog.png)
 
 
-(**TBD**)
+
 
