@@ -1,0 +1,49 @@
+﻿<Page
+    x:Class="ControlTemplate.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ControlTemplate"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+  <Page.Resources>
+    <Style TargetType="Button">
+      <Setter Property="Margin" Value="10,20" />
+      <Setter Property="Width" Value="280" />
+    </Style>
+  </Page.Resources>
+
+  <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <VariableSizedWrapGrid Orientation="Horizontal" Margin="0,100,0,0">
+
+      <Button Background="LightCyan" BorderThickness="5" BorderBrush="DarkGray">
+        <Button.Content>
+          <StackPanel Orientation="Horizontal">
+            <FontIcon  FontFamily="Segoe UI Emoji" Glyph="&#128528;" />
+            <TextBlock Text="コンテンツに複数のコントロール"
+                       VerticalAlignment="Center" Margin="5,0" />
+            <FontIcon  FontFamily="Segoe UI Emoji" Glyph="&#128338;" />
+          </StackPanel>
+        </Button.Content>
+      </Button>
+
+      <Button Content="ControlTemplate" Background="LightCyan" BorderThickness="5" BorderBrush="DarkGray">
+        <Button.Template>
+          <ControlTemplate TargetType="Button">
+            <Grid Background="{TemplateBinding Background}">
+              <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,5">
+                <FontIcon  FontFamily="Segoe UI Emoji" Glyph="&#128528;" />
+                <TextBlock Text="{TemplateBinding Content}"
+                         VerticalAlignment="Center" Margin="5,0" />
+                <FontIcon  FontFamily="Segoe UI Emoji" Glyph="&#128338;" />
+              </StackPanel>
+            </Grid>
+          </ControlTemplate>
+        </Button.Template>
+      </Button>
+
+    </VariableSizedWrapGrid>
+  </Grid>
+</Page>

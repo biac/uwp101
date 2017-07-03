@@ -1,0 +1,61 @@
+﻿<Page
+    x:Class="ViewState.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ViewState"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+  <Grid x:Name="RootGrid" Background="#ffcccc">
+    <RelativePanel>
+      <Border x:Name="MainSquare" Width="200" Height="200" Background="Red">
+        <TextBlock x:Name="TextColor" HorizontalAlignment="Center" VerticalAlignment="Center" 
+                   FontSize="100" FontWeight="Bold">赤</TextBlock>
+      </Border>
+      <StackPanel x:Name="ButtonsPanel" Orientation="Horizontal" 
+                  RelativePanel.AlignBottomWithPanel="True"
+                  RelativePanel.AlignHorizontalCenterWithPanel="True" >
+        <Button Click="ButtonReddish_Clicked" Margin="5">赤っぽい</Button>
+        <Button Click="ButtonBluish_Clicked" Margin="5">青っぽい</Button>
+      </StackPanel>
+    </RelativePanel>
+
+    <VisualStateManager.VisualStateGroups>
+
+      <VisualStateGroup x:Name="AppColor">
+        <!-- 赤系の配色（既定） -->
+        <VisualState x:Name="Reddish"/>
+        <!-- 青系の配色-->
+        <VisualState x:Name="Bluish">
+          <VisualState.Setters>
+            <Setter Target="RootGrid.Background" Value="#ccccff" />
+            <Setter Target="MainSquare.Background" Value="Blue" />
+            <Setter Target="TextColor.Text" Value="青" />
+          </VisualState.Setters>
+        </VisualState>
+      </VisualStateGroup>
+
+      <VisualStateGroup x:Name="Layout">
+        <!--<VisualState x:Name="NarrowView"/>-->
+        <VisualState x:Name="WideView">
+          <VisualState.StateTriggers>
+            <AdaptiveTrigger MinWindowWidth="540" />
+          </VisualState.StateTriggers>
+          <VisualState.Setters>
+            <!-- 既定の位置設定を解除する -->
+            <Setter Target="ButtonsPanel.(RelativePanel.AlignBottomWithPanel)" Value="False"/>
+            <Setter Target="ButtonsPanel.(RelativePanel.AlignHorizontalCenterWithPanel)"
+                    Value="False"/>
+            <!-- 新たな位置設定を設定する -->
+            <Setter Target="ButtonsPanel.(RelativePanel.AlignRightWithPanel)" Value="True"/>
+            <Setter Target="ButtonsPanel.(RelativePanel.AlignVerticalCenterWithPanel)" Value="True"/>
+            <!-- スタックパネルが子コントロールを並べる方向を変更する -->
+            <Setter Target="ButtonsPanel.Orientation" Value="Vertical"/>
+          </VisualState.Setters>
+        </VisualState>
+      </VisualStateGroup>
+
+    </VisualStateManager.VisualStateGroups>
+  </Grid>
+</Page>
