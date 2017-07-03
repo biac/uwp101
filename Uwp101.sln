@@ -33,6 +33,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{FFB0CA2C-7A6A-4D17-AF80-2B87F5A38DCA}"
+	ProjectSection(SolutionItems) = preProject
+		images\001PackagingTab.png = images\001PackagingTab.png
+		images\002SelectSignatureDialog.png = images\002SelectSignatureDialog.png
+		images\003SelectSignatureDialog_CreateTestSignature.png = images\003SelectSignatureDialog_CreateTestSignature.png
+		images\004CreateTestSignatureDialog.png = images\004CreateTestSignatureDialog.png
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM = Debug|ARM
@@ -262,5 +270,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FFB0CA2C-7A6A-4D17-AF80-2B87F5A38DCA} = {4067894F-3AAA-4734-82B3-8FE14D8E4B8C}
 	EndGlobalSection
 EndGlobal
