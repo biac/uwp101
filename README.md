@@ -6,7 +6,14 @@
 * UWP アプリ版: <https://www.microsoft.com/store/apps/9nhbvt8sgkcb>
 * Kindle 版: <http://amzn.to/2tbAWdt>
 
-  
+## ビルドするには
+
+次の環境でビルドできることを確認しています。
+
+* Windows 10 Pro. (64bit) build 15063.447
+* Visual Studio Community 2017 15.2 (26430.14)
+* Windows 10 SDK 10240, 10586, および 14393
+
 ## プロジェクト名
 
 書籍のどの部分のサンプルコードなのかを分かりやすくするため、プロジェクト名を書籍とは変えています。  
